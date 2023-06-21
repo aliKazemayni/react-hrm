@@ -1,7 +1,6 @@
 import {Box, Collapse, Divider, List, ListItemText} from "@mui/material";
 import {sidebarConfig} from "../../config/sidebar.config";
-import {activeItemStyle, collapseStyle, StyledItem, StyledItemIcon} from "../../styles/sidebar/sidebarItem.style";
-import {NavLink as RouterLink} from "react-router-dom";
+import {collapseStyle, StyledItem, StyledItemIcon} from "../../styles/sidebar/sidebarItem.style";
 import {MdExpandLess, MdExpandMore} from "react-icons/md";
 import SidebarListItem from "./SidebarListItem";
 import {useState} from "react";
@@ -16,8 +15,7 @@ const SidebarList = () => {
         });
     };
 
-    return <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-        <Divider />
+    return <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' ,mt:5}}>
         <List component="nav" aria-label="main mailbox folders">
             {
                 sidebarConfig.map(

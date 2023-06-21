@@ -19,9 +19,9 @@ const GREY = {
 export const theme = createTheme({
 
     direction: 'rtl',
-    palette:{
-        mode:"dark"
-    },
+    // palette:{
+    //     mode:"dark",
+    // },
     typography:{
         fontFamily:"vazir,roboto"
     },

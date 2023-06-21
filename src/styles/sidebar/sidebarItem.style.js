@@ -11,8 +11,9 @@ export const StyledItem = styled((props) => <ListItemButton disableGutters {...p
 }));
 
 export const StyledItemIcon = styled(ListItemIcon)({
-    width: 35,
-    height: 35,
+    width: 22,
+    height: 22,
+    fontSize:20,
     color: 'inherit',
     display: 'flex',
     alignItems: 'center',
@@ -21,9 +22,9 @@ export const StyledItemIcon = styled(ListItemIcon)({
 
 export const activeItemStyle = {
     '&.active': {
-        color: 'primary.main',
-        bgcolor: 'action.selected',
-        fontWeight: 'fontWeightBold',
+        color: 'primary.contrastText',
+        bgcolor: 'primary.main',
+        fontSize:16,
         boxShadow: (theme) => theme.palette.mode !== "dark" ?
             "4px 4px 8px #c8c8c8,-4px -4px 8px #ffffff" :
             "4px 4px 8px #0b0b0b,-4px -4px 8px #0f0f0f",
@@ -35,7 +36,6 @@ export const collapseStyle = {
     px:2,
     py:1,
     color: 'primary.main',
-    borderRadius : (theme) => theme.shape.borderRadius,
     boxShadow: (theme) => theme.palette.mode !== "dark" ?
         "1px 1px 2px #c8c8c8,-1px -1px 2px #ffffff" :
         "1px 1px 2px #303030,-1px -1px 2px #404040",

@@ -4,7 +4,6 @@ import {ThemeProvider} from '@mui/material/styles';
 import {CacheProvider} from "@emotion/react";
 import {Helmet , HelmetProvider} from 'react-helmet-async';
 import {cacheRtl, theme} from "./theme/theme";
-import DashboardLayout from "./layouts/Dashboard.layout";
 import {BrowserRouter} from "react-router-dom";
 import Router from "./router";
 

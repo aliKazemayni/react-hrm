@@ -1,16 +1,16 @@
 import Grid from "@mui/material/Unstable_Grid2";
 import Sidebar from "../component/sidebar/Sidebar";
-import {Outlet} from "react-router-dom";
 import {CssBaseline} from "@mui/material";
+import Dashboard from "../component/dashboard/Dashboard";
+import BottomNavigationComponent from "../component/bottomNavigation/BottomNavigation";
 
 function DashboardLayout() {
     return <>
         <CssBaseline>
             <Grid container sx={{height:"100vh"}}>
                 <Sidebar/>
-                <Grid xs={12} sm={12} md={9} lg={10} xl={10} textAlign={"center"}>
-                    <Outlet/>
-                </Grid>
+                <Dashboard/>
+                <BottomNavigationComponent/>
             </Grid>
         </CssBaseline>
     </>

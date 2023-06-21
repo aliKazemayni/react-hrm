@@ -5,6 +5,7 @@ import AboutPage from "./pages/About.page";
 import TasksPage from "./pages/Tasks.page";
 import DashboardLayout from "./layouts/Dashboard.layout";
 import MainPage from "./pages/Main.page";
+import DashboardAppPage from "./pages/DashboardAppPage";
 //
 
 
@@ -17,8 +18,8 @@ export default function Router() {
             element: <DashboardLayout />,
             children: [
                 { element: <Navigate to="/admin" />, index: true },
-                { path: 'about', element: <AboutPage /> },
-                { path: 'main', element: <MainPage /> },
+                { path: 'about', element: <DashboardAppPage /> },
+                { path: 'main', element: <DashboardAppPage /> },
                 { path: 'tasks', element: <TasksPage /> }
             ],
         },

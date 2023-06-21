@@ -19,9 +19,7 @@ const Sidebar = () => {
 
     return <>
         <Grid md={3} lg={2} xl={2} sx={sidebarStyle}>
-            <Typography variant={"h3"} >AK THEME</Typography>
-            <Typography mt={2} variant={"h4"}>sidebar</Typography>
-            <Typography variant={"subtitle1"}>test</Typography>
+            <Typography variant={"h3"} my={5}>AK THEME</Typography>
             <SidebarList/>
         </Grid>
     </>
