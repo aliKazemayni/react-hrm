@@ -8,7 +8,9 @@ function DashboardLayout() {
         <CssBaseline>
             <Grid container sx={{height:"100vh"}}>
                 <Sidebar/>
-                <Outlet/>
+                <Grid xs={12} sm={12} md={9} lg={10} xl={10} textAlign={"center"}>
+                    <Outlet/>
+                </Grid>
             </Grid>
         </CssBaseline>
     </>
