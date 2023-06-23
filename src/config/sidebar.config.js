@@ -1,4 +1,15 @@
-import {FiBookmark, FiCamera, FiCheck, FiFile, FiHome, FiMenu, FiPhone, FiSettings} from "react-icons/fi";
+import {
+    FiBookmark,
+    FiCamera,
+    FiCast,
+    FiCheck,
+    FiFile,
+    FiFileText,
+    FiHome,
+    FiMenu,
+    FiPhone,
+    FiSettings, FiUser
+} from "react-icons/fi";
 
 
 export const sidebarConfig = [
@@ -10,21 +21,21 @@ export const sidebarConfig = [
     },
     {
         type : "item",
-        title: "Tasks",
-        url : "/tasks",
-        icon : <FiCheck/>
+        title: "Blog",
+        url : "/blog",
+        icon : <FiFileText/>
     },
     {
         type : "item",
-        title: "Bookmark",
-        url : "/bookmark",
-        icon : <FiBookmark/>
+        title: "Product",
+        url : "/product",
+        icon : <FiCast/>
     },
     {
         type : "item",
-        title: "Media",
-        url : "/media",
-        icon : <FiCamera/>
+        title: "Users",
+        url : "/user",
+        icon : <FiUser/>
     },
     {
         type : "item",

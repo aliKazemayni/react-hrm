@@ -2,7 +2,7 @@
 import { alpha, useTheme } from '@mui/material/styles';
 import { GlobalStyles } from '@mui/material';
 // utils
-import { bgBlur } from '../../utils/cssStyles';
+import { bgBlur } from '../../styles/cssStyles';
 
 // ----------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ export default function StyledChart() {
             ...bgBlur({ color: theme.palette.background.default }),
             border: 0,
             color: theme.palette.text.primary,
-            boxShadow: theme.customShadows.dropdown,
+
             borderRadius: Number(theme.shape.borderRadius) * 1.5,
             '&:before': { borderBottomColor: 'transparent' },
             '&:after': { borderBottomColor: alpha(theme.palette.background.default, 0.8) },
@@ -26,7 +26,7 @@ export default function StyledChart() {
           '.apexcharts-tooltip.apexcharts-theme-light': {
             ...bgBlur({ color: theme.palette.background.default }),
             border: 0,
-            boxShadow: theme.customShadows.dropdown,
+
             borderRadius: Number(theme.shape.borderRadius) * 1.5,
             '.apexcharts-tooltip-title': {
               border: 0,

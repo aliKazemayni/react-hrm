@@ -1,29 +1,30 @@
 
-
-import {ThemeProvider} from '@mui/material/styles';
-import {CacheProvider} from "@emotion/react";
 import {Helmet , HelmetProvider} from 'react-helmet-async';
-import {cacheRtl, theme} from "./theme/theme";
 import {BrowserRouter} from "react-router-dom";
-import Router from "./router";
+import Routes from "./routes";
+import ThemeComponent from "./theme/ThemeComponent";
+import {ModeContext} from "./context/theme";
+import {useTheme} from "@mui/material/styles";
+import {useContext} from "react";
 
 
 function App() {
 
-  return (
-      <CacheProvider value={cacheRtl}>
-        <ThemeProvider theme={theme}>
-          <BrowserRouter>
-              <HelmetProvider>
-                  <Helmet>
-                      <title>test</title>
-                  </Helmet>
-                  <Router/>
-              </HelmetProvider>
-          </BrowserRouter>
-        </ThemeProvider>
-      </CacheProvider>
-  );
+    const theme = useTheme()
+    const context = useContext(ModeContext);
+
+    return (
+        <ThemeComponent>
+            <BrowserRouter>
+                <HelmetProvider>
+                    <Helmet>
+                        <title>test</title>
+                    </Helmet>
+                    <Routes/>
+                </HelmetProvider>
+            </BrowserRouter>
+        </ThemeComponent>
+    );
 }
 
 export default App;
