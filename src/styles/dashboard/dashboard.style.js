@@ -13,5 +13,5 @@ export const dashboardStyle = {
 export const mainDashboardStyle = {
     py:5,
     overflow:"auto",
-    height:window.innerHeight * 0.9
+    height:window.innerHeight * 0.85
 }
