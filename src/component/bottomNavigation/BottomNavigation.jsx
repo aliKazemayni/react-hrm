@@ -17,7 +17,7 @@ export default function BottomNavigationComponent() {
     return (
         <Box sx={{
             width: "100%",
-            height:"10vh",
+            height:window.innerHeight * 0.1,
             p:1,
             display: {
                 sm: 'flex',
