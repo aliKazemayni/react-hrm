@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/react-hrm/static/js/main.6c73cc50.js",
+    "main.js": "/react-hrm/static/js/main.721b46fe.js",
     "index.html": "/react-hrm/index.html",
-    "main.6c73cc50.js.map": "/react-hrm/static/js/main.6c73cc50.js.map"
+    "main.721b46fe.js.map": "/react-hrm/static/js/main.721b46fe.js.map"
   },
   "entrypoints": [
-    "static/js/main.6c73cc50.js"
+    "static/js/main.721b46fe.js"
   ]
 }
